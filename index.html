@@ -3,35 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Full Screen Button</title>
+<title>Interesting</title>
 <style>
+  /* Override GitHub Pages container */
+  .container, .wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   html, body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   button {
-    width: 100%;
-    max-width: 600px; /* Optional: limit max width for large screens */
+    display: block;
+    width: 100vw;       /* full screen width */
+    max-width: 100%;
     padding: 40px;
     font-size: 28px;
-    cursor: pointer;
     box-sizing: border-box;
+    border: none;
+    cursor: pointer;
   }
 </style>
 </head>
 <body>
 
 <button onclick="window.open('https://cdn3.emoji.gg/stickers/4110-stomp-faster.png','_blank')">
-  Open Image
+  Interesting
 </button>
 
 </body>
