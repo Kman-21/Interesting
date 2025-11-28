@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Interesting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* GitHub pages fix: break out of the centered container */
+.full-width-wrapper {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
 
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
-
-        button {
-            display: block;       /* Prevent inline spacing */
-            width: 100vw;         /* FORCE full screen width */
-            max-width: 100%;      /* Prevent overflow on PC */
-            padding: 25px;
-            font-size: 24px;
-            box-sizing: border-box;
-        }
-    </style>
+/* Button style */
+.full-btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+</style>
 </head>
+
 <body>
 
-<button onclick="window.open('https://cdn3.emoji.gg/stickers/4110-stomp-faster.png', '_blank')">
-    Interesting
-</button>
+<div class="full-width-wrapper">
+    <button class="full-btn"
+            onclick="window.open('https://cdn3.emoji.gg/stickers/4110-stomp-faster.png', '_blank')">
+        Interesting
+    </button>
+</div>
 
 </body>
 </html>
