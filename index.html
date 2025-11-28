@@ -5,36 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interesting</title>
 <style>
-  /* Override GitHub Pages container */
-  .container, .wrapper {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
+  body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
   }
 
   button {
-    display: block;
-    width: 100vw;       /* full screen width */
-    max-width: 100%;
-    padding: 40px;
-    font-size: 28px;
-    box-sizing: border-box;
-    border: none;
+    width: 100%;           /* Fill container width */
+    max-width: 400px;      /* Optional max width for big screens */
+    padding: 30px;         /* Bigger height */
+    font-size: 28px;       /* Bigger text */
     cursor: pointer;
+    border-radius: 10px;   /* Rounded corners */
+    border: 2px solid #000;
+    box-sizing: border-box;
+  }
+
+  /* Center button on page */
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
   }
 </style>
 </head>
 <body>
 
-<button onclick="window.open('https://cdn3.emoji.gg/stickers/4110-stomp-faster.png','_blank')">
-  Interesting
-</button>
+<div class="container">
+  <button onclick="window.open('https://cdn3.emoji.gg/stickers/4110-stomp-faster.png','_blank')">
+    Interesting
+  </button>
+</div>
 
 </body>
 </html>
