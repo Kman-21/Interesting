@@ -4,8 +4,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-/* GitHub pages fix: break out of the centered container */
-.full-width-wrapper {
+/* Remove GitHub Pages theme layout restrictions */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Force full-width layout on GitHub Pages */
+.full-width {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
@@ -14,16 +20,17 @@
 /* Button style */
 .full-btn {
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     font-size: 24px;
     box-sizing: border-box;
+    display: block;
 }
 </style>
 </head>
 
 <body>
 
-<div class="full-width-wrapper">
+<div class="full-width">
     <button class="full-btn"
             onclick="window.open('https://cdn3.emoji.gg/stickers/4110-stomp-faster.png', '_blank')">
         Interesting
