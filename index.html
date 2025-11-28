@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Responsive Button</title>
+    <title>Interesting</title>
 
-    <!-- Makes layout scale properly on mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            width: 100%;
         }
 
-        .full-btn {
-            width: 100%;              /* Always full width */
-            padding: 20px;            /* Scales well on all devices */
-            font-size: 1.5rem;        /* Auto-scales with screen size */
+        button {
+            display: block;       /* Prevent inline spacing */
+            width: 100vw;         /* FORCE full screen width */
+            max-width: 100%;      /* Prevent overflow on PC */
+            padding: 25px;
+            font-size: 24px;
             box-sizing: border-box;
-            cursor: pointer;
         }
     </style>
 </head>
 <body>
 
-<button class="full-btn"
-        onclick="window.open('https://cdn3.emoji.gg/stickers/4110-stomp-faster.png', '_blank')">
-    Open Image
+<button onclick="window.open('https://cdn3.emoji.gg/stickers/4110-stomp-faster.png', '_blank')">
+    Interesting
 </button>
 
 </body>
